@@ -72,6 +72,8 @@ header img {
   height: 550px;
 }
 
+/* Header Image Overlay */
+
 header::after {
   z-index: 2;
   content: "";
@@ -84,6 +86,8 @@ header::after {
   opacity: 0.4; /* Adjust opacity as needed */
 }
 
+/* Navigation Bar */
+
 header nav {
   display: inline;
   z-index: 10;
@@ -93,11 +97,15 @@ header nav {
   margin-top: -30px;
 }
 
+/* Navigation Options */
+
 nav a {
   color: white;
   text-decoration: none;
   margin-right: 1.6rem;
 }
+
+/* Section 1 After hero Section (Header Section) */
 
 .section1 {
   display: flex;
@@ -109,10 +117,14 @@ nav a {
   gap: 20px;
 }
 
+/* Section 1 Images */
+
 .section1 img {
   width: 500px;
   height: auto;
 }
+
+/* Section 2  (Image with text) */
 
 .section2 {
   margin-top: 70px;
@@ -124,6 +136,8 @@ nav a {
   margin-bottom: 66px;
 }
 
+/* Section 2 Image Containor */
+
 .section2-img {
   display: flex;
   width: 60%;
@@ -131,10 +145,14 @@ nav a {
   align-items: center;
 }
 
+/* Section 2 Image */
+
 .section2-img img {
   width: 75%;
   box-shadow: -50px 0px 0px 30px #ececec;
 }
+
+/* Section 2 Content Container */
 
 .section2-content {
   display: flex;
@@ -145,4 +163,153 @@ nav a {
   padding: 0 30px;
   gap: 30px;
   text-align: center;
+}
+
+/* Section 3 Containor */
+
+.section3 {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  margin: auto 70px;
+  margin-top: 75px;
+  margin-bottom: 66px;
+}
+
+/* Section 3 Headind */
+
+.section3 h3 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Section 3 Images containor */
+
+.img-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 37px;
+  justify-content: center;
+}
+
+/* Section 3 Images */
+
+.img-grid img {
+  width: 430px;
+  height: 340px;
+  overflow: hidden;
+  transition: ease 0.3s;
+}
+
+/* Section 3 Images Hover Effect*/
+
+.img-grid img:hover {
+  transform: scale(1.04);
+}
+
+/* Section 4 */
+
+.section4 {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  margin: 60px auto;
+  gap: 40px;
+}
+
+/* Section4 Heading */
+
+.section4 h3 {
+  text-align: center;
+}
+
+/* Section 4 Testimonial Image */
+
+.section4 img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  border: 3px solid #fed483;
+  outline: none;
+}
+
+/* section 4 Paragraph Text */
+
+.section4 p {
+  width: 40%;
+  text-align: center;
+}
+
+/* Section 5 */
+
+.section5 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 60px auto;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Section 5 Heading */
+
+.section5 h3 {
+  width: 100%;
+  flex-grow: 1;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* section5 form Containor */
+
+.section5-form {
+  display: flex;
+  width: 48%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* section 5 Form */
+
+.section5-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 70%;
+}
+
+/* Section 5 Form Input feilds */
+
+.section5-form form input {
+  height: 30px;
+  padding: 10px 15px;
+  font-size: 18px;
+  border: none;
+  box-shadow: 0px 0px 5px 1.5px #ececec;
+}
+
+/* Section 5 form Submit Button */
+
+.section5-form form input[type="submit"] {
+  background-color: #f89e12;
+  color: whitesmoke;
+  margin-top: 10px;
+  width: 25%;
+  padding-bottom: 20px;
+}
+
+/* Section 5 form text Area */
+#textareas {
+  height: 100px;
+}
+
+/* section 5 Images */
+.section5 img {
+  width: 48%;
 }
