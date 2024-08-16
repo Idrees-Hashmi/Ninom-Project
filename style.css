@@ -4,23 +4,113 @@
   font-family: "Syne", sans-serif;
   gap: 0px;
 }
-header {
-  position: relative;
-  text-align: center;
-  color: white;
+
+/* heading H2 */
+
+h2 {
+  color: #130f0f;
+  font-size: 52px;
 }
+
+/* Heading H3 */
+
+h3 {
+  color: #130f0f;
+  font-size: 40px;
+}
+
+/* Paragraph */
+
+p {
+  font-size: 22px;
+  color: #130f0f;
+}
+
+/* Button */
+
+button {
+  background-color: #130f0f;
+  color: whitesmoke;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 18px 55px;
+  border: 2px solid #130f0f;
+  transition: ease 0.3s;
+}
+
+/* Button Hover Effect*/
+
+button:hover {
+  background-color: transparent;
+  color: #130f0f;
+}
+
+/* Heading H1 */
+
 header h1 {
-  position: absolute;
-  left: 50%;
-  right: 50%;
   z-index: 50;
   color: white;
   font-size: 50px;
   text-transform: uppercase;
 }
+
+header {
+  /* position: relative; */
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header Image */
+
 header img {
   margin-top: -65px;
   z-index: 1;
   width: 100%;
   height: 550px;
+}
+
+header::after {
+  z-index: 2;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 543px;
+  background-color: #f9af2d; /* Your desired color overlay */
+  opacity: 0.4; /* Adjust opacity as needed */
+  z-index: 2; /* Ensure the overlay appears above the image */
+}
+
+header nav {
+  display: inline;
+  z-index: 10;
+  display: inline;
+  padding: 25px 30px;
+  background-color: #130f0f;
+  margin-top: -30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 1.6rem;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.section1 img {
+  width: 500px;
+  height: auto;
 }
